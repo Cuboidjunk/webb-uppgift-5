@@ -1,0 +1,109 @@
+/*https://coolors.co/f7d1cd-e8c2ca-d1b3c4-b392ac-937892-735d78-625365-403941*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-color: #F7D1CD;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #735D78;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #403941;
+    background-color: #E8C2CA;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+header nav a:hover {
+    color: #403941;
+    background-color: #B392AC;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #E8C2CA;*/
+    margin: 10px auto;
+    width: 80%;
+}
+
+footer {
+    background-color: #735D78;
+    color: #F3E4E2;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+
+    header nav {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    main {
+        display: flex;
+        gap: 70px;
+        margin: 0 30px;
+    }
+}
+
+
+/*Form*/
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+.send-button-container {
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+/*.send-button-container input {
+    width: 30%;
+    min-width: 100px;
+}*/
+
+@media (min-width: 600px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .send-button-container {
+        grid-column: span 2;
+    }
+}
